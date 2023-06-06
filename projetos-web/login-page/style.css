@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Geologica', sans-serif;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.header-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.purple {
+    color: #6534D9;
+}
+
+.desc {
+    color: #555;
+    font-weight: 300;
+}
+
+.nav-link {
+    text-decoration: none;
+    margin: 3px;
+}
+
+section {
+    display: flex;
+}
+
+.left-container {
+    flex: 1.5;
+    background-color: red;
+    height: 100vh;
+}
+
+.right-container {
+    flex: 2;
+    background-color: purple;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 40px;
+}
