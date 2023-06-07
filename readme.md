@@ -6,4 +6,8 @@ Meu objetivo a curto prazo é dominar o básico das tecnologias front-end e cons
 
 Meu objetivo a longo prazo é me tornar um desenvolvedor full-stack senior e viver bem (haha).
 
+Detalhe importante: A pasta de estudos será para colocar "sites de teste" dos conteúdos que estou estudando, enquanto a pasta de projetos será projetos em relação ao que estou estudando.
+
+Em resumo, a pasta  de estudos terá normalmente coisas simples, como sites para testar algumas ou uma única propriedade, enquanto a pasta de projetos serão coisas mais completas
+
 Enfim, tenho muito o que estudar, valeu!
