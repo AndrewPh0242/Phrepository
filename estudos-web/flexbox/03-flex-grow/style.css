@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    border: 5px solid black;
+    width: 60%;
+    height: 200px;
+}
+
+.fixed {
+    background-color: yellow;
+    width: 200px;
+    height: 200px;
+}
+
+.relative {
+    flex-grow: 1;
+    background-color: red;
+}

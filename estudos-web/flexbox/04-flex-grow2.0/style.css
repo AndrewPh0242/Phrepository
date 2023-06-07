@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100vw;
+    height: 100vh;
+    background-color: #151521;
+}
+
+.left {
+    background-color: rgb(205, 205, 18);
+    width: 600px;
+    height: 100%;
+}
+
+.right{
+    flex-grow: 1;
+    height: 100%;
+    background-color: rgb(231, 17, 17);
+}
