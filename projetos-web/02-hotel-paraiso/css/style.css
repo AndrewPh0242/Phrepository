@@ -7,6 +7,7 @@ header {
     position: absolute;
     top: 0;
     left: 0;
+    background-color: #fff;
 }
 
 header img {
@@ -38,4 +39,18 @@ header a{
     header {
         flex-direction: column;
     }
+}
+
+
+/* hero */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../imgs/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #fff;
 }
