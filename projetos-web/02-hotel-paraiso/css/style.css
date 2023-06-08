@@ -46,11 +46,279 @@ header a{
 
 .hero {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-image: url(../imgs/hero.jpg);
     background-size: cover;
     background-position: center;
     min-height: 100vh;
     color: #fff;
+}
+
+.hero h1 {
+    font-size: 3.2rem;
+    
+    margin-bottom: 15px;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero .btn {
+   
+    border-radius: 4px; 
+    padding: 20px 50px;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: #191c03;
+}
+
+@media (max-width: 700px) {
+    .hero h1 {
+        font-size: 2.4rem;
+    }
+    
+    .hero h3 {
+        font-size: 1.3rem;
+    }
+}
+
+/* conheça o hotel */
+
+.conheca-o-hotel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 50px;
+}
+
+.conheca-o-hotel h3 {
+    margin-bottom: 35px;
+    font-size: 2rem; 
+    color: #191c03;
+}
+
+.conheca-o-hotel p {
+    margin-bottom: 35px;
+    max-width: 800px;
+    color: #191c03;
+}
+
+.conheca-o-hotel hr {
+    border: none;
+    width: 200px;
+    min-height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+}
+
+.conheca-o-hotel .grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.conheca-o-hotel li{
+    height: 350px;
+    padding: 20px;
+    border-radius: 4px;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.conheca-o-hotel li.small {
+    flex-basis: 40%;
+}
+
+.conheca-o-hotel li.large {
+    flex-basis: 60%;
+}
+
+@media (max-width: 850px){
+    .conheca-o-hotel li.small, .conheca-o-hotel li.large {
+        flex-basis: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* caracteristicas */
+
+.caracteristicas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 100px 50px;
+    background-color: #191c03;
+}
+
+.caracteristicas h3 {
+    margin-bottom: 35px;
+    font-size: 2rem; 
+    color: #fff;
+}
+
+.caracteristicas p {
+    margin-bottom: 35px;
+    max-width: 800px;
+    color: #fff;
+}
+
+.caracteristicas hr {
+    border: none;
+    width: 200px;
+    min-height: 2px;
+    background-color: #fff;
+    margin-bottom: 70px;
+}
+  
+.caracteristicas .grid  { 
+    display: flex;
+    width: 100%;
+}
+
+.caracteristicas .grid li {
+    padding: 0 30px;
+    text-align: center;
+}
+
+.caracteristicas .grid li  i {
+    margin-bottom: 30px;
+    color: #c3c63b;
+    font-size: 50px;
+    
+}
+
+.caracteristicas .grid li h4 {
+    margin-bottom: 35px;
+    font-size: 1.5rem;
+    color: #c3c63b;
+}
+
+@media (max-width: 850px) {
+    .caracteristicas .grid {
+        flex-direction: column;
+    }
+}
+
+
+/* Newsletter*/
+
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.newsletter h3 {
+    margin-bottom: 35px;
+    font-size: 2rem; 
+    color: #191c03;
+}
+
+.newsletter p {
+    margin-bottom: 35px;
+    max-width: 800px;
+    color: #191c03;
+}
+
+.newsletter hr {
+    border: none;
+    width: 200px;
+    min-height: 2px;
+    background-color: #191c03;
+    margin-bottom: 70px;
+}
+  
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+}
+
+.newsletter input {
+    padding: 15px;
+    border: 1px solid #191c03;
+    border-radius: 4px;
+    margin-right: 15px;
+    flex-grow: 1;
+}
+
+.newsletter button {
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    background-color: #c3c63b;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+    .newsletter form {
+        flex-direction: column;
+    }
+
+    .newsletter input {
+        margin-right: 0;
+        width: 100%;
+    }
+    .newsletter button {
+        margin-top: 15px;
+        width: 100%;
+    }
+}
+
+
+/* footer */ 
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+    background-color: #191c03;
+    color: #c3c63b;
+}
+
+footer ul {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+footer ul li {
+    margin-right: 10px;
+}
+
+footer ul li:last-child {
+    margin-right: 0;
+}
+
+footer ul li a {
+    font-size: 2rem;
+    color: #c3c63b;
+}
+
+footer em {
+    text-align: center;
 }
