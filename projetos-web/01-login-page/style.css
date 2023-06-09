@@ -1,22 +1,200 @@
-body {
-    display: flex;
+/*-- vars --*/
+:root {
+    --color-palette1: #bfdde1;
+    --color-palette2: #99BAC3;
+    --color-palette3: #0c1113;
+}
+
+
+/*-- reset --*/
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Geologica';
+    box-sizing: border-box;
+    font-family: 'Open Sans';
+    letter-spacing: .9px;
 }
 
-.left {
-    width: 400px;
+ul {
+    list-style: none;
+    text-decoration: none;
 }
 
-.right {
+a {
+    text-decoration: none;
+    opacity: .9;
+}
+
+a:hover {
+    opacity: 1;
+}
+
+
+
+
+
+/*-- header --*/
+
+header {
     display: flex;
-
-    flex-grow: 1;
-    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    padding: 20px 10px;
+    background-color: var(--color-palette3);
+    opacity: .9;
 }
 
-.form-container {
-    height: 600px;
-    
+header .icon {
+    font-size: 20px;
+    color: var(--color-palette1)
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    padding-left: 20px;
+}
+
+header nav ul li:first-child {
+    padding-left: 0;
+}
+
+header nav ul li a {
+    color: var(--color-palette1);
+}
+
+@media (max-width: 500px) {
+    header {
+        flex-direction: column;
+        padding: 10px 0  20px 0;
+    }
+
+    header nav ul {
+        margin-top: 10px;
+    }
+}
+
+
+
+/*-- login area--*/
+.login-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(img/pexels-eberhard-grossgasteiger-1287145.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.login-area form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    border-radius: 4px;
+    padding: 25px;
+    min-width: 450px;
+    min-height: 550px;
+    background-color: var(--color-palette3);
+    opacity: .9;
+    color: var(--color-palette1);
+}
+
+.login-area form h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+
+.login-area form .user, .pass {
+    margin-bottom: 20px;
+    font-size: 1.15rem;
+}
+
+.login-area form label input {
+    border: none;
+    border-bottom: 2px solid var(--color-palette1);
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    font-size: .9rem;
+    background-color: var(--color-palette3);
+    color: var(--color-palette2);
+}
+
+.login-area form .btn {
+    margin-top: 30px;
+    border: none;
+    padding: 10px;
+    background-color: var(--color-palette2);
+    color: #fff;
+    text-transform: uppercase;
+    opacity: .9;
+}
+
+.login-area form .btn:hover {
+    opacity: 1;
+}
+
+
+
+
+/*-- or --*/
+.or {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+.line {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 1px;
+    border: 0.5px solid var(--color-palette1);
+}
+
+.line div {
+    background-color: var(--color-palette3);
+    padding: 12px;
+}
+
+.or-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.or-options a {
+    font-size: 25px;
+    padding: 0 20px;
+}
+
+.newuser a {
+    color: var(--color-palette2);
+}
+
+@media (max-width: 500px) {
+    .login-area form{
+        min-width: 400px;
+    }
+}
+
+
+@media (max-width: 440px) {
+    .login-area form{
+        min-width: 350px;
+    }
+}
+
+@media (max-width: 399px) {
+    .login-area form{
+        min-width: 280px;
+    }
 }
